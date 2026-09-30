@@ -7,7 +7,10 @@ public class Devide {
         int n = in.nextInt();
         int m = in.nextInt();
 
-        System.out.println(n % m == 0 || m % n == 0 ? 1 : 0);
+        int a = n % m;
+        int b = m % n;
+
+        System.out.println((a * b == 0) ? 1 : -1);
     }
 }
 
