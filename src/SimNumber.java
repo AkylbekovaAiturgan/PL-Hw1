@@ -4,19 +4,13 @@ public class SimNumber {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        int n = in.nextInt();
-
-        int a = n / 1000;
-        int b = n / 100 % 10;
-        int c = n / 10 % 10;
-        int d = n % 10;
-
-        int x = Math.abs(a - d);
-        int y = Math.abs(b - c);
-
-        System.out.println((x + y) == 0 ? 1 : 0);
+        int a = in.nextInt();
+        int b = a / 1000;
+        int c = a / 100 % 10;
+        int d = a / 10 % 10;
+        int f = a % 10;
+        int k = Math.abs(b - f) + Math.abs(c - d) + 1;
+        System.out.println(k);
     }
 }
-
-
 
